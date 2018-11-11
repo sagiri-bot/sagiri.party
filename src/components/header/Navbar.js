@@ -45,15 +45,13 @@ class Navbar extends Component {
   render() {
     return (
       <div className="hero-foot">
-        <nav className="tabs is-boxed is-fullwidth">
+        <nav className="is-fullwidth">
           <div className="container">
             <ul>
               <Item name="Home" href="/" exact />
               <Item name="Commands" href="/commands" />
               <Item name="Donate" href="/donate" />
               <Item external name="Invite the bot" href="https://dabbot.org/invite" />
-              <Item external name="Support server" href="https://dabbot.org/support" />
-              <Item external name="Patreon" href="https://patreon.com/dabbot" />
             </ul>
           </div>
         </nav>
