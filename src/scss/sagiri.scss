@@ -1,0 +1,43 @@
+@import "bootstrap";
+
+.sagiri-hero {
+    background-color: $pink-2;
+    min-height: 700px;
+    height: 100vh;
+    background-image: url("../sagiri-hero.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: auto 55vh;
+}
+
+.sagiri-hero-buttons {
+    color: white;
+    height: 70vh;
+}
+
+@include media-breakpoint-up(sm) {
+    .sagiri-hero {
+        background-color: $pink-2;
+        background-image: url("../sagiri-hero.png"), url("../herobg.svg");
+        background-size: auto 55vh, 100%;
+        animation: floating 4s infinite alternate ease-in-out;
+    }
+
+    .sagiri-hero-buttons {
+        height: 50vh;
+    }
+}
+
+.hero-button {
+    width: 180px;
+}
+
+@keyframes floating {
+    from {
+        background-position: 50% 105%, 50% 100%;
+    }
+
+    to {
+        background-position: 50% 100%, 50% 102%;
+    }
+}

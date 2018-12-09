@@ -22,6 +22,7 @@
   align-items: center;
   justify-content: space-between; // space out brand from logo
   padding: $navbar-padding-y $navbar-padding-x;
+  transition: 300ms ease-out background-color;
 
   // Because flex properties aren't inherited, we need to redeclare these first
   // few properties so that content nested within behave properly.
@@ -104,14 +105,22 @@
   align-items: center;
 }
 
+@include media-breakpoint-down(sm) {
+  .navbar-collapse {
+    margin-top: 1rem;
+    height: 100vh;
+  }
+}
+
 // Button for toggling the navbar when in its collapsed state
 .navbar-toggler {
-  padding: $navbar-toggler-padding-y $navbar-toggler-padding-x;
+  //padding: $navbar-toggler-padding-y $navbar-toggler-padding-x;
+  padding: 0.25rem 0.25rem;
   font-size: $navbar-toggler-font-size;
   line-height: 1;
   background-color: transparent; // remove default button style
   border: $border-width solid transparent; // remove default button style
-  @include border-radius($navbar-toggler-border-radius);
+  //@include border-radius($navbar-toggler-border-radius);
 
   @include hover-focus {
     text-decoration: none;
@@ -189,6 +198,14 @@
   }
 }
 
+@keyframes closeanim {
+  from {
+    transform: scaleY(0.2);
+  }
+  to {
+    transform: scaleY(1);
+  }
+}
 
 // Navbar themes
 //
@@ -202,6 +219,11 @@
     @include hover-focus {
       color: $navbar-light-active-color;
     }
+  }
+
+  .navbar-icon-close .navbar-toggler-icon {
+    animation: closeanim 500ms;
+    background: $navbar-light-close-icon-bg !important;
   }
 
   .navbar-nav {
@@ -227,7 +249,7 @@
 
   .navbar-toggler {
     color: $navbar-light-color;
-    border-color: $navbar-light-toggler-border-color;
+    //border-color: $navbar-light-toggler-border-color;
   }
 
   .navbar-toggler-icon {
@@ -256,6 +278,11 @@
     }
   }
 
+  .navbar-icon-close .navbar-toggler-icon {
+    animation: closeanim 500ms;
+    background: $navbar-dark-close-icon-bg !important;
+  }
+
   .navbar-nav {
     .nav-link {
       color: $navbar-dark-color;
@@ -279,7 +306,7 @@
 
   .navbar-toggler {
     color: $navbar-dark-color;
-    border-color: $navbar-dark-toggler-border-color;
+    //border-color: $navbar-dark-toggler-border-color;
   }
 
   .navbar-toggler-icon {

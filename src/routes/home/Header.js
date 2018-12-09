@@ -1,25 +1,23 @@
 import React, { Component } from 'react'
-
-class Subtitle extends Component {
-  render() {
-    return (
-      <h1 className="subtitle is-2 align-center">
-        <a className="button is-success is-large" href="https://sagiri.party/invite">
-          Invite
-        </a>
-        <hr />
-        <img className="header-image" src={require("../../sagiri-hero.png")} alt="mascot" />
-      </h1>
-    )
-  }
-}
+import { Container, Button, Col, Row } from 'reactstrap';
+import sagiri from '../../SagiriLogo.svg';
 
 class Header extends Component {
   render() {
     return (
-      <div className="column is-12">
-        <h1 className="title is-2 align-center">Make your Discord more awesome</h1>
-        <Subtitle />
+      <div className="sagiri-hero">
+        <Container className="sagiri-hero-buttons d-flex justify-content-center flex-column">
+          <Row className="mt-auto mb-auto text-center">
+            <Col xs="12">
+              <img src={sagiri} alt="Sagiri" className="mb-4" width="300px"/>
+              <h1>Make your Discord more awesome</h1>
+              <Button className="hero-button mt-4" /*href="/invite"*/ color="blurple" outline>
+                <i className="fab fa-discord mr-2" />
+                Invite
+              </Button>
+            </Col>
+          </Row>
+        </Container>
       </div>
     )
   }

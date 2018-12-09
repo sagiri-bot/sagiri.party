@@ -8,10 +8,12 @@
   display: inline-block;
   font-weight: $btn-font-weight;
   text-align: center;
+  text-transform: uppercase;
   white-space: nowrap;
   vertical-align: middle;
   user-select: none;
   border: $btn-border-width solid transparent;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
   @include button-size($btn-padding-y, $btn-padding-x, $font-size-base, $btn-line-height, $btn-border-radius);
   @include transition($btn-transition);
 
@@ -23,7 +25,8 @@
   &:focus,
   &.focus {
     outline: 0;
-    box-shadow: $btn-focus-box-shadow;
+    //box-shadow: $btn-focus-box-shadow;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
   }
 
   // Disabled comes first so active can properly restyle

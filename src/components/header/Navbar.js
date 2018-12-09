@@ -1,63 +1,56 @@
-import React, { Component } from 'react'
-import { NavLink } from 'react-router-dom'
+import React from 'react';
+import { Link } from 'react-router-dom';
+import sagiri from '../../SagiriLogo.svg';
+import {
+  Collapse,
+  Navbar as BootstrapNavbar,
+  NavbarToggler,
+  NavbarBrand,
+  Nav,
+  NavLink,
+  NavItem } from 'reactstrap';
 
-class InternalItemLink extends Component {
+export default class Navbar extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.toggle = this.toggle.bind(this);
+    this.state = {
+      isOpen: false
+    };
+  }
+  toggle() {
+    this.setState({
+      isOpen: !this.state.isOpen
+    });
+  }
   render() {
     return (
-      <li>
-        <NavLink to={this.props.href} exact={this.props.exact} activeStyle={{ backgroundColor: '#2B2B2B', borderColor: '#2B2B2B', color: 'white' }} >
-          {this.props.name}
-        </NavLink>
-      </li>
-    )
-  }
-}
+      <div>
+        <BootstrapNavbar dark color={this.state.isOpen ? 'dark' : ''} fixed="top" expand="lg">
+          <NavbarBrand href="/">
+            <img alt="Sagiri" width="130px" style={{marginTop: "-13px"}} src={sagiri}/>
+          </NavbarBrand>
+          <NavbarToggler
+            onClick={this.toggle}
+            className={this.state.isOpen ? 'navbar-icon-close' : ''}
+          />
 
-class ExternalItemLink extends Component {
-  render() {
-    return (
-      <li>
-        <a href={this.props.href}>{this.props.name}</a>
-      </li>
-    )
-  }
-}
-
-class ItemLink extends Component {
-  render() {
-    if (this.props.external) {
-      return (<ExternalItemLink name={this.props.name} href={this.props.href} />)
-    } else {
-      return (<InternalItemLink exact={this.props.exact} name={this.props.name} href={this.props.href} />)
-    }
-  }
-}
-
-class Item extends Component {
-  render() {
-    return (
-      <ItemLink external={this.props.external} exact={this.props.exact} name={this.props.name} href={this.props.href} />
-    )
-  }
-}
-
-class Navbar extends Component {
-  render() {
-    return (
-      <div className="hero-foot">
-        <nav className="is-fullwidth">
-          <div className="container">
-            <ul>
-              <Item name="Home" href="/" exact />
-              <Item name="Commands" href="/commands" />
-              <Item name="Donate" href="/donate" />
-              <Item external name="Invite the bot" href="https://dabbot.org/invite" />
-            </ul>
-          </div>
-        </nav>
+          <Collapse isOpen={this.state.isOpen} navbar>
+            <Nav className="mr-auto" navbar>
+              <NavItem>
+                <NavLink tag={Link} to="/commands">Commands</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink tag={Link} to="/donate">Donate</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink tag={Link} to="/community">Community</NavLink>
+              </NavItem>
+            </Nav>
+          </Collapse>
+        </BootstrapNavbar>
       </div>
-    )
+    );
   }
 }
-
-export default Navbar

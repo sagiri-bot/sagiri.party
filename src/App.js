@@ -9,7 +9,7 @@ import Home from './routes/Home'
 // import Donate from './routes/Donate'
 
 import './App.css'
-import './scss/bootstrap.scss';
+import './scss/sagiri.scss';
 
 class App extends Component {
   render() {
@@ -18,13 +18,9 @@ class App extends Component {
         <Router>
           <div>
             <Header />
-            <section className="section">
-              <div className="container">
-                <Route exact path="/" component={Home} />
-                {/* <Route path="/commands" component={Commands} />
-                <Route path="/donate" component={Donate} />  */}
-              </div>
-            </section>
+            <Route exact path="/" component={Home} />
+            {/* <Route path="/commands" component={Commands} />
+            <Route path="/donate" component={Donate} />  */}
             <Footer />
           </div>
         </Router>
