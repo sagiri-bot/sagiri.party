@@ -9,6 +9,7 @@ import Home from './routes/Home'
 // import Donate from './routes/Donate'
 
 import './App.css'
+import './scss/bootstrap.scss';
 
 class App extends Component {
   render() {
