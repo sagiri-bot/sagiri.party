@@ -1,43 +1,158 @@
 @import "bootstrap";
 
+h1, h2, h3 {
+  font-weight: 300;
+}
+
+h4, h5, h6 {
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
 .sagiri-hero {
-    background-color: $pink-2;
-    min-height: 700px;
-    height: 100vh;
-    background-image: url("../sagiri-hero.png");
+  background-color: hsl(341, 98, 81);
+  min-height: 700px;
+  height: 100vh;
+  background-image: url("../sagiri-hero.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: auto 55vh;
+}
+
+.sagiri-features {
+  background-color: hsl(341, 100, 74);
+  height: 700px;
+
+  .left {
+    color: white;
+
+    h1 {
+      margin-bottom: 3rem;
+    }
+
+    p {
+      font-size: 1rem;
+      margin-bottom: 3rem;
+    }
+  }
+
+  .discord {
+    background-image: url("../screen.png");
+    height: 600px;
+    position: absolute;
+    left: 4rem;
+    bottom: 0;
+    width: 100vh;
     background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: auto 55vh;
+    border-top-left-radius: 5px;
+  }
+}
+
+.sagiri-reviews {
+  background-color: white;
+  color: hsl(341, 98, 81);
+  &-bottom {
+    margin: 5rem 0;
+  }
 }
 
 .sagiri-hero-buttons {
-    color: white;
-    height: 70vh;
+  color: white;
+  height: 70vh;
 }
 
-@include media-breakpoint-up(sm) {
-    .sagiri-hero {
-        background-color: $pink-2;
-        background-image: url("../sagiri-hero.png"), url("../herobg.svg");
-        background-size: auto 55vh, 100%;
-        animation: floating 4s infinite alternate ease-in-out;
-    }
+.navbar {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
 
-    .sagiri-hero-buttons {
-        height: 50vh;
+  &-brand img {
+    filter: drop-shadow(0 1px 2px rgba(255, 122, 164, 0.6));
+  }
+
+  &-toggler {
+    box-shadow: 0 1px 2px rgba(255, 122, 164, 0.6);
+    background-color: hsla(341, 100, 74, 0.3);
+    border-radius: 0.25rem;
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .navbar {
+    position: fixed;
+  }
+
+  .navbar-collapse {
+    margin-top: 1rem;
+    //height: 100vh;
+    text-align: center;
+
+    & .nav-item {
+      margin-bottom: 1rem;
     }
+  }
+
+  .discord {
+    display: none;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .sagiri-hero {
+    background-image: url("../sagiri-hero.png"), url("../herobg.svg");
+    background-size: auto 55vh, 100%;
+    animation: floating 4s infinite alternate ease-in-out;
+  }
+
+  .sagiri-hero-buttons {
+    height: 50vh;
+  }
+}
+
+.review {
+  margin: 2rem;
+  padding: 2rem 0;
+  background-color: #f0f0f0;
+  border-color: #dedede;
+  border-radius: 5px;
+  flex: 1 1 auto;
+  height: 350px;
+
+  img {
+    height: 150px;
+  }
+
+  &-content {
+    font-size: 1.1rem;
+    margin: 1rem 1rem;
+  }
 }
 
 .hero-button {
-    width: 180px;
+  width: 180px;
+}
+
+.footer {
+  background-color: #3a3a3a;
+  color: white;
+  padding: 3rem 0;
+
+  span {
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+  }
 }
 
 @keyframes floating {
-    from {
-        background-position: 50% 105%, 50% 100%;
-    }
+  from {
+    background-position: 50% 105%, 50% 100%;
+  }
 
-    to {
-        background-position: 50% 100%, 50% 102%;
-    }
+  to {
+    background-position: 50% 100%, 50% 102%;
+  }
 }

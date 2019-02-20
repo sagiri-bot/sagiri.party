@@ -8,7 +8,6 @@ import Home from './routes/Home'
 // import Commands from './routes/Commands'
 // import Donate from './routes/Donate'
 
-import './App.css'
 import './scss/sagiri.scss';
 
 class App extends Component {
@@ -29,4 +28,4 @@ class App extends Component {
   }
 }
 
-export default App
+export default App;
