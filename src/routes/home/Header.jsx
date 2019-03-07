@@ -5,8 +5,8 @@ import sagiri from '../../SagiriLogo.svg';
 class Header extends React.PureComponent {
   render() {
     return (
-      <div className="sagiri-hero">
-        <Container className="sagiri-hero-buttons d-flex justify-content-center flex-column">
+      <div className="sagiri-home-header">
+        <Container className="sagiri-home-header-buttons d-flex justify-content-center flex-column">
           <Row className="mt-auto mb-auto text-center">
             <Col xs="12">
               <img src={sagiri} alt="Sagiri" className="mb-4" width="300px"/>

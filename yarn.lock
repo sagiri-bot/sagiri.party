@@ -1473,7 +1473,7 @@ class-utils@^0.3.5:
     isobject "^3.0.0"
     static-extend "^0.1.1"
 
-classnames@^2.2.3, classnames@^2.2.6:
+classnames@^2.2.3, classnames@^2.2.5, classnames@^2.2.6:
   version "2.2.6"
   resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.2.6.tgz#43935bffdd291f326dad0a205309b38d00f650ce"
   integrity sha512-JR/iSQOSt+LQIWwrwEzJ9uk0xfN3mTVYMwt1Ir5mUcSN6pU+V4zQFFaJsclJbPuAUQH+yfWef6tm7l1quW3C8Q==
@@ -5045,7 +5045,7 @@ promise-inflight@^1.0.1:
   resolved "https://registry.yarnpkg.com/promise-inflight/-/promise-inflight-1.0.1.tgz#98472870bf228132fcbdd868129bad12c3c029e3"
   integrity sha1-mEcocL8igTL8vdhoEputEsPAKeM=
 
-prop-types@^15.5.8, prop-types@^15.6.1, prop-types@^15.6.2:
+prop-types@^15.5.10, prop-types@^15.5.8, prop-types@^15.6.1, prop-types@^15.6.2:
   version "15.7.2"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.7.2.tgz#52c41e75b8c87e72b9d9360e0206b99dcbffa6c5"
   integrity sha512-8QQikdH7//R2vurIJSutZ1smHYTcLpRWEOlHnzcWHmBYrOGUysKwSsrC89BCiFj3CbrfJ/nXFdJepOVrY1GCHQ==
@@ -5189,6 +5189,11 @@ rc@^1.2.7:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
+react-anchor-link-smooth-scroll@^1.0.11:
+  version "1.0.11"
+  resolved "https://registry.yarnpkg.com/react-anchor-link-smooth-scroll/-/react-anchor-link-smooth-scroll-1.0.11.tgz#e53f55b89382df0d85470ebd20e6b349d62eb19d"
+  integrity sha512-PaAFtqs00eXbbYPTaiG7sEL2EkVfs+PiarzMnMN66JQWamORiNOzyhumW2tImKeKFUZeFdifqz9iJy/2e4RLnw==
+
 react-dom@^16.8.2:
   version "16.8.2"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.8.2.tgz#7c8a69545dd554d45d66442230ba04a6a0a3c3d3"
@@ -5256,6 +5261,15 @@ react-router@^4.3.1:
     path-to-regexp "^1.7.0"
     prop-types "^15.6.1"
     warning "^4.0.1"
+
+react-scrollspy@^3.3.5:
+  version "3.3.5"
+  resolved "https://registry.yarnpkg.com/react-scrollspy/-/react-scrollspy-3.3.5.tgz#e3e605bfc153a23f5fdf1279dd9f397d6e76e228"
+  integrity sha512-s2wAoFGgeArJ8bSpdxwWiZpVzHc+VN5K7996v35JysXXYqfqSHj+yhLpre6v5kQVAT4DFpTnnMOmrhZqfyxEgA==
+  dependencies:
+    babel-runtime "^6.26.0"
+    classnames "^2.2.5"
+    prop-types "^15.5.10"
 
 react-transition-group@^2.3.1:
   version "2.5.3"

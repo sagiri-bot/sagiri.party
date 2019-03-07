@@ -5,7 +5,7 @@ import Header from './components/Header'
 import Footer from './components/Footer'
 
 import Home from './routes/Home'
-// import Commands from './routes/Commands'
+import Commands from './routes/Commands'
 // import Donate from './routes/Donate'
 
 import './scss/sagiri.scss';
@@ -18,8 +18,8 @@ class App extends Component {
           <div>
             <Header />
             <Route exact path="/" component={Home} />
-            {/* <Route path="/commands" component={Commands} />
-            <Route path="/donate" component={Donate} />  */}
+            <Route path="/commands" component={Commands} />
+            {/*<Route path="/donate" component={Donate} />*/}
             <Footer />
           </div>
         </Router>

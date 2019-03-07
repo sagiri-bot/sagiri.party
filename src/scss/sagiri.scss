@@ -12,7 +12,7 @@ h1 {
   font-size: 2.5rem;
 }
 
-.sagiri-hero {
+.sagiri-home-header {
   background-color: hsl(341, 98, 81);
   min-height: 700px;
   height: 100vh;
@@ -20,6 +20,18 @@ h1 {
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: auto 55vh;
+
+  &-buttons {
+    color: white;
+    height: 70vh;
+  }
+}
+
+.sagiri-hero {
+  color: white;
+  background-color: hsl(341, 98, 70);
+  padding-top: 6rem;
+  padding-bottom: 3rem;
 }
 
 .sagiri-features {
@@ -57,11 +69,6 @@ h1 {
   &-bottom {
     margin: 5rem 0;
   }
-}
-
-.sagiri-hero-buttons {
-  color: white;
-  height: 70vh;
 }
 
 .navbar {
@@ -102,14 +109,14 @@ h1 {
 }
 
 @include media-breakpoint-up(md) {
-  .sagiri-hero {
+  .sagiri-home-header {
     background-image: url("../sagiri-hero.png"), url("../herobg.svg");
     background-size: auto 55vh, 100%;
     animation: floating 4s infinite alternate ease-in-out;
-  }
 
-  .sagiri-hero-buttons {
-    height: 50vh;
+    &-buttons {
+      height: 50vh;
+    }
   }
 }
 
@@ -129,6 +136,90 @@ h1 {
   &-content {
     font-size: 1.1rem;
     margin: 1rem 1rem;
+  }
+}
+
+.commands {
+  &-sidebar {
+    padding: 2rem 0;
+    border-right: 2px solid;
+    border-color: hsl(341, 98, 70);
+    ul {
+      padding-left: 0;
+      margin: 0;
+      position: sticky;
+      top: 3rem;
+      a {
+        display: block;
+      }
+    }
+  }
+
+  &-category {
+    h2 {
+      color: hsl(341, 98, 70);
+    }
+    padding: 2rem 0;
+  }
+
+  &-card {
+    h5 {
+      color: hsl(341, 98, 70);
+    }
+    background-color: hsl(341, 98, 95);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin: 1rem 0;
+  }
+}
+
+.usage {
+  color: hsl(341, 98, 60);
+
+  &-command {
+    color: hsl(341, 98, 60);
+    &:before {
+      content: ".";
+    }
+  }
+
+  &-required {
+    color: hsl(341, 98, 70);
+    &:before {
+      content: " <";
+    }
+    &:after {
+      content: ">";
+    }
+  }
+
+  &-optional {
+    color: hsl(341, 98, 75);
+    &:before {
+      content: " [";
+    }
+    &:after {
+      content: "]";
+    }
+  }
+}
+
+.sidebar-link {
+  list-style: none;
+  font-size: 1.2rem;
+  padding: 0.2rem 2rem;
+  color: #fd6897;
+  transition: 200ms ease;
+  transition-property: color, background-color;
+
+  &.active, &:hover {
+    color: white;
+    background-color: #fd6897;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
   }
 }
 
