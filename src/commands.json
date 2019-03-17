@@ -1,0 +1,49 @@
+{
+  "Basic": [
+    {
+      "name": "help",
+      "description": "List of all available commands."
+    },
+    {
+      "name": "invite",
+      "description": "Invite Sagiri to your guild."
+    },
+    {
+      "name": "test",
+      "usage": "test <gay|asd|foo|bar> [user]",
+      "description": "blah"
+    },
+    {
+      "name": "test5345",
+      "usage": "test lol [lol|a|b]",
+      "description": "blah"
+    }
+  ],
+  "Moderation": [
+    {
+      "name": "ban",
+      "usage": "ban <user> [reason]",
+      "description": "Throw a ban hammer at someone."
+    },
+    {
+      "name": "test1234",
+      "description": "blah"
+    },
+    {
+      "name": "test4234",
+      "description": "blah"
+    },
+    {
+      "name": "test34532",
+      "description": "blah"
+    },
+    {
+      "name": "test123",
+      "description": "blah"
+    },
+    {
+      "name": "test234",
+      "description": "blah"
+    }
+  ]
+}
