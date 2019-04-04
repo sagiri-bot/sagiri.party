@@ -1,49 +1,123 @@
 {
   "Basic": [
     {
-      "name": "help",
+      "name": "Help",
       "description": "List of all available commands."
     },
     {
-      "name": "invite",
+      "name": "Info",
+      "description": "Get some useful info about Sagiri."
+    },
+    {
+      "name": "Invite",
       "description": "Invite Sagiri to your guild."
+    }
+  ],
+  "Configuration": [
+    {
+      "name": "ModChan",
+      "usage": "modchan <channel>",
+      "description": "Set the modlog channel."
     },
     {
-      "name": "test",
-      "usage": "test <gay|asd|foo|bar> [user]",
-      "description": "blah"
+      "name": "ModRole",
+      "usage": "modrole <role>",
+      "description": "Set the moderation role."
     },
     {
-      "name": "test5345",
-      "usage": "test lol [lol|a|b]",
-      "description": "blah"
+      "name": "Toggle logs",
+      "usage": "togglelogs <webhook>",
+      "description": "Toggle logs on the webhook."
+    },
+    {
+      "name": "Toggle role state",
+      "usage": "togglerolestate",
+      "description": "Toggle role state on the server."
     }
   ],
   "Moderation": [
     {
-      "name": "ban",
+      "name": "Ban",
       "usage": "ban <user> [reason]",
       "description": "Throw a ban hammer at someone."
     },
     {
-      "name": "test1234",
-      "description": "blah"
+      "name": "Case",
+      "usage": "case <case number>",
+      "description": "Inspect a case."
     },
     {
-      "name": "test4234",
-      "description": "blah"
+      "name": "History",
+      "usage": "history <user>",
+      "description": "Inspect the history of a user."
     },
     {
-      "name": "test34532",
-      "description": "blah"
+      "name": "Kick",
+      "usage": "kick <user> [reason]",
+      "description": "Kick a user."
     },
     {
-      "name": "test123",
-      "description": "blah"
+      "name": "Mute",
+      "usage": "mute <user> <duration> [reason]",
+      "description": "Mute a user."
     },
     {
-      "name": "test234",
-      "description": "blah"
+      "name": "Reason",
+      "usage": "reason <case number> <reason>",
+      "description": "Edit the reason of a case."
+    },
+    {
+      "name": "Reschedule",
+      "usage": "reschedule <case number> <duration>",
+      "description": "Reschedule a mute."
+    },
+    {
+      "name": "Softban",
+      "usage": "softban <user> [reason]",
+      "description": "Softban a user. It bans and unban a user right after to delete his messages."
+    },
+    {
+      "name": "Unban",
+      "usage": "unban <user> [reason]",
+      "description": "Unban a user."
+    }
+  ],
+  "Music": [
+    {
+      "name": "Pause",
+      "description": "Pause the music."
+    },
+    {
+      "name": "Play",
+      "usage": "play <url/search>",
+      "description": "Play music from the URL/Search."
+    },
+    {
+      "name": "Queue",
+      "usage": "queue [page]",
+      "description": "Show the music queue."
+    },
+    {
+      "name": "Remove",
+      "usage": "remove <music position>",
+      "description": "Remove a music from the queue."
+    },
+    {
+      "name": "Resume",
+      "description": "Resume the music."
+    },
+    {
+      "name": "Shuffle",
+      "description": "Shuffle music from the queue."
+    },
+    {
+      "name": "Stop",
+      "description": "Stop the music and leave."
+    },
+    {
+      "name": "Volume",
+      "usage": "volume <value>",
+      "description": "Change the volume. (Patreon only)"
     }
   ]
 }
