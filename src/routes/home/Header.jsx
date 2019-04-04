@@ -11,7 +11,7 @@ class Header extends React.PureComponent {
             <Col xs="12">
               <img src={sagiri} alt="Sagiri" className="mb-4" width="300px"/>
               <h1>Make your Discord more awesome</h1>
-              <Button className="hero-button mt-4" /*href="/invite"*/ color="blurple" outline>
+              <Button className="hero-button mt-4" href="/invite" color="blurple" outline>
                 <i className="fab fa-discord mr-2" />
                 Invite
               </Button>

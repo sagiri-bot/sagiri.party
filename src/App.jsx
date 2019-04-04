@@ -6,7 +6,8 @@ import Footer from './components/Footer'
 
 import Home from './routes/Home'
 import Commands from './routes/Commands'
-// import Donate from './routes/Donate'
+import Premium from './routes/Premium'
+import Community from './routes/Community'
 
 import './scss/sagiri.scss';
 
@@ -19,7 +20,10 @@ class App extends Component {
             <Header />
             <Route exact path="/" component={Home} />
             <Route path="/commands" component={Commands} />
-            {/*<Route path="/donate" component={Donate} />*/}
+            <Route path="/premium" component={Premium} />
+            <Route path="/community" component={Community} />
+            <Route path="/invite" component={Community} />
+            <Route path="/community" component={Community} />
             <Footer />
           </div>
         </Router>
