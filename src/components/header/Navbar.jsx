@@ -42,7 +42,7 @@ export default class Navbar extends React.Component {
                 <NavLink tag={Link} to="/commands">Commands</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink tag={Link} to="/donate">Donate</NavLink>
+                <NavLink tag={Link} to="/premium">Premium</NavLink>
               </NavItem>
               <NavItem>
                 <NavLink tag={Link} to="/community">Community</NavLink>

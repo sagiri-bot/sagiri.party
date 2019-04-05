@@ -57,11 +57,6 @@
       "description": "Kick a user."
     },
     {
-      "name": "Mute",
-      "usage": "mute <user> <duration> [reason]",
-      "description": "Mute a user."
-    },
-    {
       "name": "Reason",
       "usage": "reason <case number> <reason>",
       "description": "Edit the reason of a case."
@@ -75,11 +70,6 @@
       "name": "Softban",
       "usage": "softban <user> [reason]",
       "description": "Softban a user. It bans and unban a user right after to delete his messages."
-    },
-    {
-      "name": "Unban",
-      "usage": "unban <user> [reason]",
-      "description": "Unban a user."
     }
   ],
   "Music": [

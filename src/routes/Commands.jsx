@@ -80,7 +80,7 @@ const CommandCard = (props) => {
             {props.command.usage
                 ? (<Fragment>{"Usage: "}{usageToReact(props.command.usage)}</Fragment>)
                 : (<Fragment>{"Usage: "}<span
-                    className="usage-command">{props.command.name}</span></Fragment>)}
+                    className="usage-command">{props.command.name.toLowerCase()}</span></Fragment>)}
         </div>
     );
 };

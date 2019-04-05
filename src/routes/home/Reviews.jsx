@@ -25,14 +25,14 @@ class Reviews extends React.PureComponent {
                         <Review by="shu" avatar="https://files.gang.moe/ZGXBOR0B.png">
                             I am using this bot on my 3.8k members server and it's a really big help for us.
                         </Review>
-                        <Review by="anime girl" avatar="https://t4.rbxcdn.com/3b6ff3d387f8bfd902489514a4608fca">
+                        <Review by="ryan." avatar="https://cdn.discordapp.com/avatars/217617036749176833/1c4618b720de26b049a54d65739a4e92.png?size=256">
                             Sagiri big cute OwO
                         </Review>
                     </Row>
 
                     <div className="sagiri-reviews-bottom">
                         <h5 className="mb-5">Convinced yet? Get Sagiri for your Discord server now!</h5>
-                        <Button className="hero-button mt-4" /*href="/invite"*/ color="blurple">
+                        <Button className="hero-button mt-4" href="/invite" color="blurple">
                             <i className="fab fa-discord mr-2" />
                             Invite
                         </Button>
