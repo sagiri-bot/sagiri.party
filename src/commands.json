@@ -74,6 +74,10 @@
   ],
   "Music": [
     {
+      "name": "Clear",
+      "description": "Clear the queue."
+    },
+    {
       "name": "Pause",
       "description": "Pause the music."
     },
@@ -89,7 +93,7 @@
     },
     {
       "name": "Remove",
-      "usage": "remove <music position>",
+      "usage": "remove <song-position>",
       "description": "Remove a music from the queue."
     },
     {
@@ -99,6 +103,10 @@
     {
       "name": "Shuffle",
       "description": "Shuffle music from the queue."
+    },
+    {
+      "name": "Skip",
+      "description": "Skip the current song."
     },
     {
       "name": "Stop",
