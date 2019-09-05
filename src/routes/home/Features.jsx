@@ -19,7 +19,7 @@ class Features extends React.PureComponent {
                                 </p>
                             </div>
                             <div className="text-center">
-                                <Button className="hero-button" outline color="primary">
+                                <Button className="hero-button" href="/commands" outline color="primary">
                                     <i className="fas fa-terminal mr-2"/>
                                     Commands
                                 </Button>
