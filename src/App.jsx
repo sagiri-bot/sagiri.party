@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom'
+import createHistory from 'history/createBrowserHistory'
+import ReactGA from 'react-ga'
 
 import Header from './components/Header'
 import Footer from './components/Footer'
@@ -11,11 +13,24 @@ import Community from './routes/Community'
 
 import './scss/sagiri.scss';
 
+
+const history = createHistory()
+history.listen(location => {
+	ReactGA.set({ page: location.pathname })
+	ReactGA.pageview(location.pathname)
+})
+
+
 class App extends Component {
+  componentDidMount() {
+		ReactGA.pageview(window.location.pathname)
+  }
+  
   render() {
+    
     return (
       <div>
-        <Router>
+        <Router history={history}>
           <div>
             <Header />
             <Route exact path="/" component={Home} />

@@ -19,13 +19,13 @@ class Reviews extends React.PureComponent {
                     <h1 className="mt-5">Trusted by over a thousand of Discord servers</h1>
                     <h5>See what the people say about Sagiri</h5>
                     <Row>
-                        <Review by="alula" avatar="https://files.gang.moe/4uG3kzbi.png">
+                        <Review by="alula" avatar="https://cdn.discordapp.com/avatars/219067402174988290/3d338bf91dfd62e5a6ebd6e8465eea57.png?size=256">
                             Sagiri is our little server helper, she contains features that help us keeping server clean.
                         </Review>
-                        <Review by="shu" avatar="https://files.gang.moe/ZGXBOR0B.png">
+                        <Review by="shu" avatar="https://cdn.discordapp.com/avatars/338624483357360129/6ce6bcd045ee77d9671b285f345a547f.png?size=256">
                             I am using this bot on my 3.8k members server and it's a really big help for us.
                         </Review>
-                        <Review by="ryan." avatar="https://cdn.discordapp.com/avatars/217617036749176833/1c4618b720de26b049a54d65739a4e92.png?size=256">
+                        <Review by="ryan." avatar="https://cdn.discordapp.com/avatars/217617036749176833/1b61717d7cbd6852fac2206754b5815f.png?size=256">
                             Sagiri big cute OwO
                         </Review>
                     </Row>

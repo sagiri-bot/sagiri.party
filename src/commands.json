@@ -5,51 +5,121 @@
       "description": "List of all available commands."
     },
     {
+      "name": "Invite",
+      "description": "Invite Sagiri to your guild."
+    },
+    {
+      "name": "Language",
+      "description": "Change language of your guild."
+    },
+    {
+      "name": "Prefix",
+      "description": "Change the prefix."
+    },
+    {
+      "name": "Ping",
+      "description": "Pong!"
+    }
+  ],
+  "Currency": [
+    {
+      "name": "Daily",
+      "usage": "daily [user]",
+      "description": "Get your daily ☄️"
+    },
+    {
+      "name": "Give",
+      "usage": "give <user> <amount>",
+      "description": "Give your ☄️"
+    },
+    {
+      "name": "Money",
+      "usage": "money [user]",
+      "description": "Get your balance."
+    }
+  ],
+  "Games": [
+    {
+      "name": "8Ball",
+      "usage": "8ball <question>",
+      "description": "Ask question and receive a random answer."
+    },
+    {
+      "name": "Choose",
+      "usage": "choose <choice1,choice2...>",
+      "description": "Chooses between things."
+    },
+    {
+      "name": "Rate",
+      "usage": "rate <something>",
+      "description": "Rate something!"
+    },
+    {
+      "name": "Slot",
+      "usage": "slot <amount>",
+      "description": "Play slot machine."
+    }
+  ],
+  "Info": [
+    {
+      "name": "Donators",
+      "description": "Get the list of donators."
+    },
+    {
       "name": "Info",
       "description": "Get some useful info about Sagiri."
     },
     {
-      "name": "Invite",
-      "description": "Invite Sagiri to your guild."
-    }
-  ],
-  "Configuration": [
-    {
-      "name": "ModChan",
-      "usage": "modchan <channel>",
-      "description": "Set the modlog channel."
+      "name": "Role",
+      "usage": "role <role>",
+      "description": "Get info about a role."
     },
     {
-      "name": "ModRole",
-      "usage": "modrole <role>",
-      "description": "Set the moderation role."
+      "name": "Server",
+      "description": "Get info about the guild."
     },
     {
-      "name": "Toggle logs",
-      "usage": "togglelogs <webhook>",
-      "description": "Toggle logs on the webhook."
+      "name": "Shard",
+      "usage": "shardinfo",
+      "description": "Get info on shards."
     },
     {
-      "name": "Toggle role state",
-      "usage": "togglerolestate",
-      "description": "Toggle role state on the server."
+      "name": "Stats",
+      "description": "Get random stats about Sagiri."
+    },
+    {
+      "name": "User",
+      "usage": "user [member]",
+      "description": "Get info about a user."
     }
   ],
   "Moderation": [
+    {
+      "name": "autorole",
+      "description": "Setup autorole system."
+    },
     {
       "name": "Ban",
       "usage": "ban <user> [reason]",
       "description": "Throw a ban hammer at someone."
     },
     {
-      "name": "Case",
-      "usage": "case <case number>",
-      "description": "Inspect a case."
+      "name": "Blacklist",
+      "description": "Blacklist a channel."
     },
     {
-      "name": "History",
-      "usage": "history <user>",
-      "description": "Inspect the history of a user."
+      "name": "Clear",
+      "usage": "clear <amount>",
+      "description": "Clear an amount of messages."
+    },
+    {
+      "name": "Filter",
+      "description": "Setup word filter system."
+    },
+    {
+      "name": "Hackban",
+      "usage": "hackban <id> <reason>",
+      "description": "Ban someone only with his user ID."
     },
     {
       "name": "Kick",
@@ -57,19 +127,46 @@
       "description": "Kick a user."
     },
     {
+      "name": "Leave",
+      "description": "Setup leave message system. (you can use [user] to tag the user that left.)"
+    },
+    {
+      "name": "Lockdown",
+      "usage": "lockdown <start/stop>",
+      "description": "Lock the channel, and allow only admins to talk."
+    },
+    {
+      "name": "Mute",
+      "usage": "mute <user> [reason]",
+      "description": "Prevents someone from talking."
+    },
+    {
       "name": "Reason",
       "usage": "reason <case number> <reason>",
       "description": "Edit the reason of a case."
     },
     {
-      "name": "Reschedule",
-      "usage": "reschedule <case number> <duration>",
-      "description": "Reschedule a mute."
+      "name": "Role",
+      "description": "Setup selfrole system. "
     },
     {
       "name": "Softban",
       "usage": "softban <user> [reason]",
-      "description": "Softban a user. It bans and unban a user right after to delete his messages."
+      "description": "Ban and unban for clear whole every messages of a user."
+    },
+    {
+      "name": "UnMute",
+      "usage": "unmute <user> [reason]",
+      "description": "Authorize someone to talk."
+    },
+    {
+      "name": "Welcome",
+      "description": "Setup leave message system. (you can use [user] to tag the user that left and [usercount] to show the member count in your guild.)"
+    },
+    {
+      "name": "Whitelist",
+      "description": "Whitelist a channel.",
+      "usage": "whitelist <channel>"
     }
   ],
   "Music": [
@@ -87,6 +184,14 @@
       "description": "Play music from the URL/Search."
     },
     {
+      "name": "Move",
+      "description": "Move Sagiri to your current voice channel."
+    },
+    {
+      "name": "Now",
+      "description": "Shows what's playing right now."
+    },
+    {
       "name": "Queue",
       "usage": "queue [page]",
       "description": "Show the music queue."
@@ -99,6 +204,10 @@
     {
       "name": "Resume",
       "description": "Resume the music."
+    },
+    {
+      "name": "Repeat",
+      "description": "Repeat music from the queue."
     },
     {
       "name": "Shuffle",
@@ -116,6 +225,129 @@
       "name": "Volume",
       "usage": "volume <value>",
       "description": "Change the volume. (Patreon only)"
+    }
+  ],
+  "NSFW": [
+    {
+      "name": "Ass",
+      "description": "Shows some ass."
+    },
+    {
+      "name": "Boobs",
+      "description": "Shows some boobs."
+    },
+    {
+      "name": "Danbooru",
+      "usage": "danbooru [search]",
+      "description": "Search on danbooru."
+    },
+    {
+      "name": "Konachan",
+      "usage": "konachan [search]",
+      "description": "Search on konachan."
+    },
+    {
+      "name": "Neko",
+      "description": "Shows some nekogirls."
+    },
+    {
+      "name": "Rule34",
+      "usage": "rule34 <search>",
+      "description": "Search on rule34."
+    }
+  ],
+  "Search": [
+    {
+      "name": "Anime",
+      "usage": "anime <search>",
+      "description": "Search an anime on AniList."
+    },
+    {
+      "name": "Avatar",
+      "usage": "avatar [member]",
+      "description": "Get the avatar of a user."
+    },
+    {
+      "name": "Cat",
+      "description": "Show a random cat picture."
+    },
+    {
+      "name": "Catgirls",
+      "description": "Show a random catgirls picture."
+    },
+    {
+      "name": "chucknorris",
+      "description": "Show a random Chuck Norris joke."
+    },
+    {
+      "name": "Dog",
+      "description": "Show a random dog picture."
+    },
+    {
+      "name": "Emojify",
+      "usage": "emojify <argument>",
+      "description": "Get emoji based on the argument."
+    },
+    {
+      "name": "osu",
+      "usage": "osu <user>",
+      "description": "Search an osu! profile"
+    },
+    {
+      "name": "Shibe",
+      "description": "Show a random shibe picture."
+    },
+    {
+      "name": "Urban",
+      "usage": "urban <word>",
+      "description": "Search into urban dictionary."
+    }
+  ],
+  "Util": [
+    {
+      "name": "Aesthetic",
+      "usage": "aesthetic <text>",
+      "description": "Converts text to ａｅｓｔｈｅｔｉｃ."
+    },
+    {
+      "name": "Cow-Say",
+      "usage": "cowsay <text>",
+      "description": "Converts text to cow-say."
+    },
+    {
+      "name": "List selfrole",
+      "usage": "lsr",
+      "description": "List all self-assignable roles."
+    },
+    {
+      "name": "Poll",
+      "usage": "poll <title> <choice1, choice2, etc...>",
+      "description": "Start a poll. (if you want to space a choice/title you need to quote it)"
+    },
+    {
+      "name": "Remind",
+      "usage": "remind <time> <reminder>",
+      "description": "I will remind you something."
+    },
+    {
+      "name": "Reverse",
+      "usage": "reverse <text>",
+      "description": "Reverses a text."
+    },
+    {
+      "name": "Selfrole",
+      "usage": "selfrole <role>",
+      "description": "Give/Remove yourself a role."
+    },
+    {
+      "name": "Shorten",
+      "usage": "shorten <url>",
+      "description": "Short a long URL."
+    },
+    {
+      "name": "UnShorten",
+      "usage": "unshorten <url>",
+      "description": "Unshort a short URL."
     }
   ]
 }
